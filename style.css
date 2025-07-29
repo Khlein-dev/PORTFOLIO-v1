@@ -55,20 +55,7 @@ body {
 
 .ln:hover {
 
-    margin-left: 25px;
-    border-left: 20px solid #6db90a;
-    box-shadow: 2px 0 40px #6db90a;
-    animation: pulseGlow 1.5s infinite alternate;
-}
 
-@keyframes pulseGlow {
-    0% {
-        box-shadow: -2px 0 5px #6db90a;
-    }
-
-    100% {
-        box-shadow: -2px 0 15px #6db90a;
-    }
 }
 
 
