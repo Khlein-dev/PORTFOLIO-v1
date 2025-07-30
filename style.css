@@ -20,7 +20,7 @@ body {
     height: 100vh;
     width: 300px;
     background: linear-gradient(to bottom, #0c021f, #0a0010, #000000);
-   
+
     color: yellowgreen;
     padding: 20px;
     position: sticky;
@@ -125,11 +125,11 @@ a {
     justify-content: center;
     display: inline-flex;
     gap: 20px;
-   
+
 }
 
 .cont {
-     width: 38px;
+    width: 38px;
     height: 38px;
     background-color: #6db90a;
     border-radius: 50%;
@@ -141,7 +141,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,26 +198,40 @@ section {
 }
 
 .content {
-    color: white;
-    width: 965px;
-    height: 600px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #030009;
-    position: relative;
+  color: white;
+  width: 965px;
+  height: 600px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: conic-gradient(from 180deg at 50% 50%, yellowgreen, #6db90a, #202d07, #6db90a, yellowgreen);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: conic-gradient(from 180deg at 50% 50%, yellowgreen, #6db90a, #202d07, #6db90a, yellowgreen);
+  filter: blur(1.5rem);
+  border-radius: 50px;
+  z-index: -2;
 }
 
 .content::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, yellowgreen, #6db90a);
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 30px;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: #030009;
+  border-radius: 44px;
+  z-index: -1;
 }
