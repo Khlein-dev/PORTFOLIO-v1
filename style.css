@@ -395,7 +395,7 @@ section {
     width: 100%;
     max-width: 963px;
     height: 100%;
-    margin-left: 340px;
+    transform: translateX(340px);
     padding: 20px;
     background: linear-gradient(to top, #0c021f, #0a0010, #020001);
     position: absolute;
@@ -442,22 +442,23 @@ section::-webkit-scrollbar {
 }
 
 .content {
-    translate: -15 0px;
+    translate: -30 0px;
     color: white;
-    width: 945px;
+    width: 935x;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-image: conic-gradient(from 124deg, transparent 70%, yellowgreen);
     position: relative;
     z-index: 1;
     overflow: hidden;
     box-shadow: 0 0 15px 2px rgba(153, 205, 50, 0.438);
     padding: 20px;
+    margin: 20px auto;
     font-family: 'Inter', sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
+    text-align: left;
 
 
 
@@ -474,8 +475,58 @@ section::-webkit-scrollbar {
 
 /* Skills */
 
+.skills {
+    width: 400px;
+    height: 400px;
+    background-color: #0c021f;
+    border-radius: 33px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    padding: 20px;
+
+}
+
+.skill {
+    width: 380px;
+    height: 92px;
+    background-color: #14052e;
+    border-radius: 15px;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    text-indent: 0;
+    transition: 100ms;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px 2px rgba(104, 28, 121, 0.566);
+    background-color: rgba(131, 11, 131, 0.729);
+}
+
+.skill p {
+    transform: translateY(95px);
+    margin-right: 20px;
+    text-indent: 0;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #e9e9e9;
+    font-weight: 500;
+    display: block;
+    padding: 20px;
+
+}
+
 .language {
-    width: 100%;
+    width: 870px;
     max-width: 900px;
     height: 130px;
     background-color: #0c021f;
@@ -525,7 +576,14 @@ section::-webkit-scrollbar {
     font-family: 'Inter', sans-serif;
     flex-shrink: 0;
     scroll-snap-align: start;
+    transition: 100ms;
 
+}
+
+.lang:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px 2px rgba(104, 28, 121, 0.566);
+    background-color: rgba(131, 11, 131, 0.729);
 }
 
 .lang p {
@@ -625,14 +683,24 @@ section::-webkit-scrollbar {
 }
 
 @keyframes fadeup {
-    from {
+    0% {
         opacity: 0;
-        transform: translateY(10px) scale(0.5);
+        transform: translateY(20px);
     }
 
-    to {
+    40% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    70% {
+        opacity: 0.8;
+        transform: translateY(4px);
+    }
+
+    100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
     }
 }
 
