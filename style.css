@@ -611,17 +611,85 @@ section::-webkit-scrollbar {
 
 /*PROJECTS  */
 
-.proj{
-    width: 380px;
-    height: 292px;
-    background-color: #14052e;
+.proj {
+    width: 100%;
+    max-width: 900px;
+    height: 100px;
+    background-color: #0c021f;
     border-radius: 15px;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    color: white;
-    font-weight: bold;
-    text-indent: 0;
-    transition: 100ms;
+    margin: 10px;
+    transform: translateY(-120px);
+}
+
+#ta {
+    background-image: url('pics/logo.png');
+    background-size: contain;       /* Ensures the whole image fits */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-position: center;
+    margin-left: 10px;
+    transform: translateY(-30px);
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+#horo {
+   background-image: url('pics/horoscope.png');
+    background-size: contain;       /* Ensures the whole image fits */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-position: center;
+    margin-left: 10px;
+    transform: translateY(-30px);
+    width: 360px;
+    height: 160px;
+    z-index: 1;
+    position: relative;
+    display: block;
+ 
+    
+}
+
+#voro {
+     background-image: url('pics/vorologo.png');
+    background-size: contain;       /* Ensures the whole image fits */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-position: center;
+    margin-left: 10px;
+    transform: translateY(-30px);
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+    position: relative;
+    display: block;
+ 
+   
+}
+
+#math {
+   background-image: url('pics/mathalon.png');
+    background-size: contain;       /* Ensures the whole image fits */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-position: center;
+    margin-left: 10px;
+    transform: translateY(-30px);
+    width: 360px;
+    height: 160px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+.proj p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    transform: translateY(20px); /* Reduced from 120px */
 }
 
 
