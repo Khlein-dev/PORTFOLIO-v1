@@ -684,6 +684,24 @@ button:hover {
     /* Reduced from 120px */
 }
 
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    transform: translateY(90px);
+}
+
+.images img {
+    width: 283px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transform: rotateY(-300px);
+}
+
 .projcontainer1,
 .projcontainer2,
 .projcontainer3,
