@@ -37,11 +37,11 @@ function slideDown(element) {
   element.style.transition = "height 0.5s ease";
 
   requestAnimationFrame(() => {
-    element.style.height = "400px"; // match your CSS height
+    element.style.height = "800px"; // match your CSS height
   });
 
   setTimeout(() => {
-    element.style.height = "400px";
+    element.style.height = "800px";
     element.style.overflow = "";
     element.style.transition = "";
   }, 500);
@@ -54,7 +54,7 @@ function slideUp(element) {
 
   setTimeout(() => {
     element.style.display = "none";
-    element.style.height = "400px";
+    element.style.height = "800px";
     element.style.overflow = "";
     element.style.transition = "";
   }, 500);

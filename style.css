@@ -694,7 +694,7 @@ button:hover {
 }
 
 .images img {
-    width: 283px;
+    width: 350px;
     height: 150px;
     object-fit: cover;
     border-radius: 15px;
@@ -709,7 +709,7 @@ button:hover {
     position: relative;
     background: linear-gradient(to bottom, #0c021f, #0a0010, #020001);
     width: 860px;
-    height: 400px;
+    height: 800px;
     border-radius: 15px;
     padding: 20px;
     display: none;
@@ -721,7 +721,7 @@ button:hover {
 .content p {
     font-family: 'Inter', sans-serif;
     text-indent: 80px;
-    translate: 0 -120px;
+    translate: 0 -68px;
     font-size: 15px;
     line-height: 23px;
     text-align: justify;
