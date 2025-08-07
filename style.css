@@ -715,13 +715,21 @@ button:hover {
     display: none;
 }
 
+.proj p{
+   transform: translateY(80px);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
 
 
 
 .content p {
     font-family: 'Inter', sans-serif;
     text-indent: 80px;
-    translate: 0 -68px;
+    translate: 0 -120px;
     font-size: 15px;
     line-height: 23px;
     text-align: justify;
