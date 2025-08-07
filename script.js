@@ -59,3 +59,4 @@ function slideUp(element) {
     element.style.transition = "";
   }, 500);
 }
+

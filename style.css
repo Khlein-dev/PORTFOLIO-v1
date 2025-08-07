@@ -681,8 +681,64 @@ button:hover {
     font-family: 'Inter', sans-serif;
     padding: 20px;
     transform: translateY(20px);
-    /* Reduced from 120px */
+   
 }
+
+.git {
+    width: 53px;
+    height: 53px;
+    padding-right: 2px;
+    background-color: #6db90a;
+    border-radius: 45px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: left;
+    transition: 100ms   ease;
+    transform: translateY(-40px);
+}
+
+.git::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    z-index: 0;
+}
+
+.git:hover {
+    transform: translateY(-45px);
+    box-shadow: 0 0 15px 2px #66a020;
+    background-color: #9acd32;
+    width: 200px;
+}
+
+.github img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transform: translateY(3px);
+    margin-left: 5px;
+}
+
+.view {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-indent: 0;
+    display: none;
+    
+}
+
+.github:hover .view {
+   display: block;
+
+}
+
 
 .images {
     display: flex;
