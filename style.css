@@ -698,16 +698,6 @@ button:hover {
     transform: translateY(-40px);
 }
 
-.git::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    z-index: 0;
-}
 
 .git:hover {
     transform: translateY(-45px);
