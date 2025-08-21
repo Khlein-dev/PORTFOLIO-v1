@@ -395,35 +395,52 @@ section {
     width: 100%;
     max-width: 963px;
     height: 100%;
-    transform: translateX(340px);
     padding: 20px;
     background: linear-gradient(to top, #0c021f, #0a0010, #020001);
     position: absolute;
     overflow-y: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE & Edge */
+}
+
+section::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Large screens (≥1200px) */
+@media screen and (min-width: 1200px) {
+    section {
+        transform: translateX(340px);
+    }
+}
+
+/* Medium screens (≤1199px) */
+@media screen and (max-width: 1199px) {
+    section {
+        max-width: 90%;
+        transform: none; /* Remove the horizontal shift */
+        margin: 0 auto;
+    }
+}
+
+/* Small screens (≤768px) */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 15px;
+        max-width: 100%;
+    }
+}
+
+/* Extra small screens (≤480px) */
+@media screen and (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
 }
 
 section::-webkit-scrollbar {
     display: none;
-}
-
-@media screen and (min-width: 1600px) {
-    section {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    section {
-        width: 1200px;
-        margin-left: 0;
-    }
 }
 
 
@@ -884,3 +901,6 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+
+
